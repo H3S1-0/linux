@@ -4,13 +4,15 @@
 # Leaf 00H
          0,    0,  EAX,   31:0, max_basic_leafs, Max input value for supported subleafs
 
-# Leaf 01H
-         1,    0,  EAX,    3:0, stepping, Stepping ID
-         1,    0,  EAX,    7:4, model, Model
-         1,    0,  EAX,   11:8, family, Family ID
-         1,    0,  EAX,  13:12, processor, Processor Type
-         1,    0,  EAX,  19:16, model_ext, Extended Model ID
-         1,    0,  EAX,  27:20, family_ext, Extended Family ID
+
+	# Leaf 01H
+	1, 0, EAX, 3:0, stepping, Stepping ID
+	1, 0, EAX, 7:4, model, Model
+	1, 0, EAX, 11:8, family, Family ID
+	1, 0, EAX, 13:12, processor, Processor Type
+	1, 0, EAX, 19:16, model_ext, Extended Model ID
+	1, 0, EAX, 27:20, family_ext, Extended Family ID
+
 
          1,    0,  EBX,    7:0, brand, Brand Index
          1,    0,  EBX,   15:8, clflush_size, CLFLUSH line size (value * 8) in bytes
